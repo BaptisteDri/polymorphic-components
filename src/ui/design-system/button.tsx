@@ -1,23 +1,3 @@
-// type PolymorphicProps<Element extends React.ElementType, Props> = Props &
-//   Omit<React.ComponentProps<Element>, "as"> & {
-//     as?: Element;
-//   };
-
-// type Props = {
-//   // custom props here
-// };
-
-// const defaultElement = "button";
-
-// export const Button = <
-//   Element extends React.ElementType = typeof defaultElement
-// >(
-//   props: PolymorphicProps<Element, Props>
-// ) => {
-//   const { as: Component = defaultElement, ...rest } = props;
-//   return <Component {...rest} />;
-// };
-
 import { twMerge } from "tailwind-merge";
 import { cva, type VariantProps } from "class-variance-authority";
 
